@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PADC Exercise3</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="linked_in">PADC-Linkedin</string>
+    <string name="JobSearch">PADC-JobSearch</string>
+    <string name="gmail">kkhantthu97@gmail.com</string>
+    <string name="name">Kaung Khant Thu</string>
+    <string name="role">Student</string>
+    <string name="course">Professional Android Developer Course</string>
+    <string name="country">Myanmar</string>
+    <string name="roleincompany">Student in Yangon University</string>
+    <string name="viewcount">37</string>
+    <string name="viewdescription">Who view your profile</string>
+    <string name="sharecount">0</string>
+    <string name="sharedescription">Who view your shares</string>
+    <string name="padc_pulse">PADC Pulse</string>
+    <string name="yoteshin">PADC-yote Shin</string>
+    <string name="Winzinn">PADC-Win zinn</string>
+    <string name="titleDescription">China Has High-Performing Companies-It just need More Of Them</string>
+    <string name="movieDescription">Looking to escape from his dying world, the orc shaman Guldan utilizes
+        dark magic to open a portal to the human realm of Azeroth. Supported by the fierce fighter </string>
+</resources>

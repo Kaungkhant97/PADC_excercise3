@@ -1,0 +1,207 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_medium"
+    tools:context="com.kaungkhantthu.padcexercise3.YoteShinFragment">
+
+    <RelativeLayout
+        android:id="@+id/movieTopicLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/warcraftposter"/>
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/poster"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_heading_1x"
+            android:text="WARCRAFT: THE BEGINNING (3D)"/>
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_height="wrap_content"
+            android:text="details"
+            android:layout_below="@id/movieTitle"
+            android:layout_toRightOf="@id/poster"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_share_black_24dp"
+            android:layout_below="@id/movieTitle"
+            android:layout_toRightOf="@id/btn_detail"/>
+    </RelativeLayout>
+<android.support.v7.widget.CardView
+    android:id="@+id/movie_explanation"
+    android:layout_width="match_parent"
+    android:layout_below="@id/movieTopicLayout"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_heading_1x"
+            android:textStyle="bold"
+            android:text="Story"/>
+        <TextView
+            android:id="@+id/longdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular"
+            android:layout_below="@id/story"
+            android:text="@string/movieDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_below="@id/longdescription"
+            android:text="Read More"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/movie_explanation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/showing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:text="Now Showing in"/>
+            <RelativeLayout
+                android:id="@+id/movieplace1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showing"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cinema1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    android:text = "Movie Planent"/>
+                <TextView
+                    android:id="@+id/place1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cinema1"
+                    android:layout_marginBottom="4dp"
+                    android:text = "Pyin Oo lwin"/>
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/place1"
+                    android:text = "10:00AM,12:30AM,3:30AM,6:30Am"/>
+
+
+                <ImageButton
+                    android:id="@+id/phone1"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:elevation="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_phone_paused_black_24dp"/>
+                <ImageButton
+                    android:background="@drawable/roundedbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:elevation="10dp"
+                    android:layout_toLeftOf="@id/phone1"
+                    android:src="@drawable/ic_share_black_24dp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/myline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+               android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@color/text_black_full"
+                android:layout_below="@id/movieplace1"/>
+            <RelativeLayout
+                android:id="@+id/movieplace2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myline">
+                <TextView
+                    android:id="@+id/cinema2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    android:text = "Movie Planent"/>
+                <TextView
+                    android:id="@+id/place2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cinema2"
+                    android:layout_marginBottom="4dp"
+                    android:text = "Pyin Oo lwin"/>
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/place2"
+                    android:text = "10:00AM,12:30AM,3:30AM,6:30Am"/>
+
+
+                <ImageButton
+                    android:id="@+id/phone2"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:elevation="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_phone_paused_black_24dp"/>
+                <ImageButton
+                    android:background="@drawable/roundedbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:elevation="10dp"
+                    android:layout_toLeftOf="@id/phone2"
+                    android:src="@drawable/ic_share_black_24dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

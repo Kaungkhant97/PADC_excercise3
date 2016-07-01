@@ -1,0 +1,132 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaungkhantthu.padcexercise3.PulseFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileLayout">
+        <ImageView
+            android:layout_margin="@dimen/margin_medium"
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_settings_black_24dp" />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_toLeftOf="@id/setting"
+            android:src="@drawable/ic_search24dp" />
+        <ImageView
+            android:id="@+id/friend"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_toLeftOf="@id/search"
+            android:src="@drawable/ic_person_outline_black_24dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/cover"
+        android:scaleType="centerCrop"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="70dp"
+        android:layout_marginTop="100dp"
+        android:elevation="8dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile"
+
+        android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@id/profile"
+            android:textStyle="bold"
+            android:text="Good morning Kaung Khant"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_regular_3x"
+            />
+        <TextView
+            android:id="@+id/topstorieshere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/morning"
+            android:text="Here your top stories"
+           />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_medium_2">
+            <TextView
+            android:id="@+id/edition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editor's Pick"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/edition"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:background="@color/text_black_full"
+                />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="@string/titleDescription"
+                android:textSize="@dimen/text_heading_1x"
+               />
+            <TextView
+                android:id="@+id/editor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="John /  121 shares"
+                android:textSize="@dimen/text_regular"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_below="@id/editor"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newsimage"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

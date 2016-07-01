@@ -1,0 +1,147 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_medium"
+    tools:context="com.kaungkhantthu.padcexercise3.WinZinnFragment">
+
+    <RelativeLayout
+        android:id="@+id/samplecomicLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comiclogo"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:src="@drawable/dc_comics_logo_2012" />
+        <TextView
+            android:id="@+id/filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiclogo"
+            android:text="File size : 2.43MB"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/comicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/comiclogo"
+            android:text="DC comics"
+            android:textSize="@dimen/text_heading_1x" />
+
+        <TextView
+            android:id="@+id/comiceditor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comicname"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/comiclogo"
+            android:text="John smith"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/comicprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiceditor"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/comiclogo"
+            android:text="100$"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comicprice"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/comiclogo"
+            android:background="#d9ba22"
+            android:text="Buy" />
+
+        <Button
+            android:id="@+id/btn_Sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_buy"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/comiclogo"
+            android:background="#d9ba22"
+            android:text="sample" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/comicDescriptionsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_below="@id/samplecomicLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiclogo"
+            android:textColor="#d9ba22"
+            android:text="Summary"
+            android:textSize="@dimen/text_regular_3x" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiclogo"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="............."
+            android:textSize="@dimen/text_regular_3x" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiclogo"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:textColor="#d9ba22"
+            android:text="Related books"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comiclogo"
+            android:textColor="#d9ba22"
+            android:text="Comic Books"
+            android:textSize="@dimen/text_regular_3x" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/comicDescriptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:src="@drawable/dc_comics_heroes"
+            android:layout_margin="@dimen/margin_medium"
+
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:src="@drawable/joker"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:src="@drawable/antman"
+            android:scaleType="centerCrop"/>
+        
+    </LinearLayout>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

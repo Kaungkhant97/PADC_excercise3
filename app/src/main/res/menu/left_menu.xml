@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/linkedinItem"
+            android:checked="true"
+            android:icon="@drawable/ic_linkedin24dp"
+            android:title="@string/linked_in"
+            />
+
+        <item
+            android:id="@+id/jobSearchItem"
+            android:icon="@drawable/ic_search24dp"
+            android:title="@string/JobSearch"/>
+
+        <item
+            android:id="@+id/pulse"
+            android:icon="@drawable/ic_delete_black_24dp"
+            android:title="@string/padc_pulse"/>
+
+       <item
+            android:id="@+id/yoteshin"
+            android:icon="@drawable/ic_work_black_24dp"
+            android:title="@string/yoteshin"/>
+
+        <item
+            android:id="@+id/winzinn"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/Winzinn"/>
+
+    </group>
+</menu>

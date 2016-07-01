@@ -1,0 +1,188 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kaungkhantthu.padcexercise3.Linkedin_Fragment">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="210dp"
+       android:scaleType="centerCrop"
+       android:src = "@drawable/cover"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/advatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src = "@drawable/profile"/>
+   <android.support.v7.widget.CardView
+       android:id="@+id/cardprofile_info"
+       android:layout_width="match_parent"
+       android:layout_height="210dp"
+       android:elevation="3dp"
+       android:layout_marginLeft="@dimen/margin_medium"
+       android:layout_marginRight="@dimen/margin_medium"
+       android:layout_marginTop="80dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_alignParentEnd="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_create_black_24dp"
+               android:layout_alignParentRight="true" />
+
+           <TextView
+               android:id="@+id/txt_name"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:text="@string/name"
+               android:textSize="@dimen/text_heading_2x"
+               />
+           <TextView
+               android:id="@+id/txt_role"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt_name"
+               android:layout_centerHorizontal="true"
+               android:text="@string/role"
+               android:textSize="@dimen/text_heading_1x"
+               />
+           <TextView
+               android:id="@+id/txt_course"
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt_role"
+               android:layout_centerHorizontal="true"
+               android:text="@string/course"
+               android:textSize="@dimen/text_regular"
+               />
+           <TextView
+               android:id="@+id/txt_country"
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt_course"
+               android:layout_centerHorizontal="true"
+               android:text="@string/country"
+               android:textSize="@dimen/text_regular"
+               />
+           <TextView
+               android:id="@+id/txt_experience"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_below="@id/txt_country"
+               android:layout_centerHorizontal="true"
+               android:text="@string/roleincompany"
+               android:textSize="@dimen/text_regular"
+               />
+       </RelativeLayout>
+
+   </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/layout_viewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/cardprofile_info">
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:elevation="@dimen/margin_medium"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium">
+        <TextView
+            android:id="@+id/txt_viewcount"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular_3x"
+            android:text = "@string/viewcount"/>
+        <TextView
+            android:id="@+id/txt_viewcountdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_viewcount"
+            android:textSize="@dimen/text_regular"
+            android:text = "@string/viewdescription"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_height="80dp"
+            android:elevation="@dimen/margin_medium"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium">
+                <TextView
+                    android:id="@+id/txt_sharecount"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:text = "@string/sharecount"/>
+                <TextView
+                    android:id="@+id/txt_shareCountdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_sharecount"
+                    android:textSize="@dimen/text_regular"
+                    android:text = "@string/sharedescription"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_below="@id/layout_viewInfo">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_improveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular_3x"
+            android:text="Strengthen Your Profile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_linkedin24dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_below="@id/txt_improveProfile"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular_2x"
+            android:text="Show case what you know,add suggestion skills to Your Profile"/>
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
