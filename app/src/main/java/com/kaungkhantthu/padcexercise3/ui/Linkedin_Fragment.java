@@ -1,7 +1,6 @@
-package com.kaungkhantthu.padcexercise3;
+package com.kaungkhantthu.padcexercise3.ui;
 
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -9,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import de.hdodenhof.circleimageview.CircleImageView;
+import com.kaungkhantthu.padcexercise3.R;
 
 
 /**

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/margin_medium"
-    tools:context="com.kaungkhantthu.padcexercise3.WinZinnFragment">
+    tools:context=".ui.WinZinnFragment">
 
     <RelativeLayout
         android:id="@+id/samplecomicLayout"

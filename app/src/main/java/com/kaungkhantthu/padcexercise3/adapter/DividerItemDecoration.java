@@ -1,4 +1,4 @@
-package com.kaungkhantthu.padcexercise3;
+package com.kaungkhantthu.padcexercise3.adapter;
 
 import android.content.Context;
 import android.content.res.TypedArray;

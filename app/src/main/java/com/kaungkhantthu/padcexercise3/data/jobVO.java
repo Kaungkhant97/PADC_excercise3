@@ -1,4 +1,4 @@
-package com.kaungkhantthu.padcexercise3;
+package com.kaungkhantthu.padcexercise3.data;
 
 /**
  * Created by kaungkhantthu on 7/1/16.

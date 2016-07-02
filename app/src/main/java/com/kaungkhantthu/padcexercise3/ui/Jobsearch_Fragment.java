@@ -1,4 +1,4 @@
-package com.kaungkhantthu.padcexercise3;
+package com.kaungkhantthu.padcexercise3.ui;
 
 
 import android.os.Bundle;
@@ -9,7 +9,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.kaungkhantthu.padcexercise3.adapter.DividerItemDecoration;
+import com.kaungkhantthu.padcexercise3.R;
+import com.kaungkhantthu.padcexercise3.data.jobVO;
+import com.kaungkhantthu.padcexercise3.adapter.jobadapter;
 
 import java.util.ArrayList;
 
